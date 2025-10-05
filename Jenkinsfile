@@ -1,5 +1,5 @@
 @Library('groovy@main') _
-import org.mukesh.JenkinsHello
+
 
 pipeline {
     agent any
