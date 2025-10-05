@@ -1,5 +1,6 @@
 @Library('groovy@main') _
 import org.mukesh.JenkinsHello
+
 pipeline {
     agent any
 
@@ -12,7 +13,7 @@ pipeline {
         stage('Greet with Class') {
             steps {
                 script {
-                    def greeter = new org.mukesh.JenkinsHello(this)
+                    def greeter = new JenkinsHello(this)
                     greeter.sayHelloJenkins()
                 }
             }
